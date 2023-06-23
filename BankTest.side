@@ -1,0 +1,186 @@
+{
+  "id": "3b057759-986b-454f-be6e-bb669df34976",
+  "version": "2.0",
+  "name": "BankTest",
+  "url": "https://idemo.bspb.ru",
+  "tests": [{
+    "id": "9557417d-e98d-4abb-bfc5-e5bc617dfe36",
+    "name": "New_Message",
+    "commands": [{
+      "id": "c208b78e-5c79-40a0-a1d7-a22c70f79bf3",
+      "comment": "",
+      "command": "open",
+      "target": "/auth?response_type=code&client_id=1&redirect_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fsuccess&prefetch_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fprefetch&force_new_session=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cb04e08-36c8-4c31-907f-4634cb109213",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1073x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e32682c-2ba3-44b2-b1c8-3656e1f579b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//button[@id='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5343811b-33e7-4bf4-9077-f6404773ed38",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-otp-button",
+      "targets": [
+        ["id=login-otp-button", "id"],
+        ["css=#login-otp-button", "css:finder"],
+        ["xpath=//button[@id='login-otp-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07887f6f-050e-481a-b2c7-51d8ac7901f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#messages-button > .badge",
+      "targets": [
+        ["css=#messages-button > .badge", "css:finder"],
+        ["xpath=//a[@id='messages-button']/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fad59d33-5585-439b-a0ac-176438d993af",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-message-btn",
+      "targets": [
+        ["id=new-message-btn", "id"],
+        ["linkText=Новое сообщение", "linkText"],
+        ["css=#new-message-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Новое сообщение')]", "xpath:link"],
+        ["xpath=//a[@id='new-message-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='drafts-form']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/messages/form?type=message')]", "xpath:href"],
+        ["xpath=//form/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новое сообщение')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dfc63be-cfd6-470e-9ce9-111e6e55901c",
+      "comment": "",
+      "command": "click",
+      "target": "name=message.topicName",
+      "targets": [
+        ["name=message.topicName", "name"],
+        ["css=.required", "css:finder"],
+        ["xpath=//select[@name='message.topicName']", "xpath:attributes"],
+        ["xpath=//form[@id='new-message-form']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6108fa70-719b-4ffd-ae36-6545ef410ea6",
+      "comment": "",
+      "command": "select",
+      "target": "name=message.topicName",
+      "targets": [],
+      "value": "label=Вопрос по кредиту"
+    }, {
+      "id": "e472d24e-eb70-41a3-a4b5-1865f3eabad3",
+      "comment": "",
+      "command": "click",
+      "target": "name=message.text",
+      "targets": [
+        ["name=message.text", "name"],
+        ["css=.span6:nth-child(3)", "css:finder"],
+        ["xpath=//textarea[@name='message.text']", "xpath:attributes"],
+        ["xpath=//div[@id='message-text']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c55c2e52-7315-47bf-8978-c321add202b5",
+      "comment": "",
+      "command": "type",
+      "target": "name=message.text",
+      "targets": [
+        ["name=message.text", "name"],
+        ["css=.span6:nth-child(3)", "css:finder"],
+        ["xpath=//textarea[@name='message.text']", "xpath:attributes"],
+        ["xpath=//div[@id='message-text']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "6f85eb08-1fe0-48da-879d-65f886272367",
+      "comment": "",
+      "command": "click",
+      "target": "id=send-button",
+      "targets": [
+        ["id=send-button", "id"],
+        ["css=#send-button", "css:finder"],
+        ["xpath=//button[@id='send-button']", "xpath:attributes"],
+        ["xpath=//form[@id='new-message-form']/div[2]/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отправить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e38e445-95c4-4ce0-8daf-590bb62acbce",
+      "comment": "",
+      "command": "click",
+      "target": "id=footer-info",
+      "targets": [
+        ["id=footer-info", "id"],
+        ["css=#footer-info", "css:finder"],
+        ["xpath=//div[@id='footer-info']", "xpath:attributes"],
+        ["xpath=//div[@id='footer']/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "620bd7c1-e036-432b-b4b1-2b598a3b04a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сайт банка",
+      "targets": [
+        ["linkText=Сайт банка", "linkText"],
+        ["css=.website", "css:finder"],
+        ["xpath=//a[contains(text(),'Сайт банка')]", "xpath:link"],
+        ["xpath=//div[@id='footer-info']/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.bspb.ru/')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Сайт банка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4612c383-80a3-4771-808f-0d3974a58887",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bfbf29ac-e037-4e5c-8305-03a430959692",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9557417d-e98d-4abb-bfc5-e5bc617dfe36"]
+  }],
+  "urls": ["https://idemo.bspb.ru/"],
+  "plugins": []
+}
